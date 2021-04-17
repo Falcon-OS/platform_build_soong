@@ -139,6 +139,9 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 var BannerVars = []string{
 	"PLATFORM_VERSION_CODENAME",
 	"PLATFORM_VERSION",
+	"FALCON_BUILDTYPE",
+	"FALCON_BUILDVERSION",
+	"PRODUCT_DEVICE",
 	"AOSIP_VERSION",
 	"WITH_GAPPS",
 	"TARGET_PRODUCT",
@@ -147,6 +150,17 @@ var BannerVars = []string{
 	"TARGET_ARCH_VARIANT",
 	"TARGET_CPU_VARIANT",
 	"BUILD_ID",
+	"HOST_ARCH",
+	"HOST_2ND_ARCH",
+	"HOST_OS",
+	"HOST_OS_EXTRA",
+	"HOST_CROSS_OS",
+	"HOST_CROSS_ARCH",
+	"HOST_CROSS_2ND_ARCH",
+	"HOST_BUILD_TYPE",
+	"OUT_DIR",
+	"TARGET_BUILD_PDK",
+	"PDK_FUSION_PLATFORM_ZIP",
 	}
 
 func Banner(make_vars map[string]string) string {
